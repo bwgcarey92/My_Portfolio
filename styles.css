@@ -1,0 +1,227 @@
+/*html page */
+html {
+    font-family: League Spartan;
+    color: white;
+    background-color: darkgray;
+    background-image: url(https://images.unsplash.com/photo-1488903809927-48c9b4e43700?q=80&w=460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for phones and smaller screens */
+}
+
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.4);
+}
+
+nav ul {
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 400px;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 18px;
+    
+}
+
+
+/* main */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.project-image {
+    height: auto;
+    width: 200px;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    margin: 0;
+}
+
+#about-container-text {
+    width: 70%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+h2 {
+    font-family: Titillium Web;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Lexend Tera;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+
+/* project grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.project {
+    border: 1px solide black;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 15%;
+    box-shadow: 5px 5px 2px black;
+}
+
+.project p {
+    font-size: 18px;
+    font-style: italic;
+    
+}
+
+.project-title {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.project1 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), 
+    url(https://www.zdnet.com/a/img/resize/c27f92a215bdd9ee640bca38f7666f5f15b6e9dc/2021/08/04/ae10b22d-f12c-49aa-bbca-4da4fa9d5aaf/helcim-card-reader-best-credit-card-reader.jpg?auto=webp&fit=crop&height=900&width=1200);
+}
+
+.project2 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), 
+    url(https://www.collinsdictionary.com/images/full/storybook_222287314.jpg);
+}
+
+.project3 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(https://sightwords.com/images/math/counting/guess_number.jpg);
+}
+
+.project4 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(https://www.blogtyrant.com/wp-content/uploads/2022/03/fashion-blog-examples.png);
+}
+
+.project5 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(https://thumbs.dreamstime.com/b/milan-italy-august-bloomberg-logo-website-homepage-milan-italy-august-bloomberg-logo-website-h-106036111.jpg);
+}
+
+.project6 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(https://i.pinimg.com/736x/8f/49/9d/8f499df27ee46378b3f77f99183d4963.jpg);
+}
+
+.project:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+
+
+/* Skills section*/
+
+#skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+id {
+    font-size: 48px;
+    margin: 10px;
+}
+
+/* footer section */
+
+#footer {
+    background-color: rgba(51, 51, 51, 0.4);;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+}

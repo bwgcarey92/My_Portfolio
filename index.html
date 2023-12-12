@@ -1,21 +1,123 @@
+<!--Main page-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
-        <link href="./styles.css" rel="stylesheet">   
+        <link href="./styles.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lexend+Tera&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <div>
+    <body id="home">
+        <!--navbar-->
+        <div id="navbar">
             <nav>
                 <h1>Blake Carey's Portfolio</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                <ul id="navlist">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="./contactme.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <!--Main-->
+        <div id="mainpage">
+            <main>
+                <!--About section-->
+                <section id="about">
+                    <div id="about-container">
+                        <div id="about-container-text">
+                            <h2 id="about-header">About the BLAKE</h2>
+                            <p>Hi there! I'm Blake, a 31-year-old from the beautiful state of Michigan. I embarked on a transformative journey after attending Michigan State University, where my passion for coding was ignited.
+                                As someone who is always eager for new challenges, I decided to pivot my career and pursue my interest in technology. Over the past few years, I've been on a dedicated learning path to master the art of coding and web development. This journey has not only opened up exciting possibilities for my professional life but has also been a source of immense personal growth.
+                                My time at MSU provided a strong foundation, but it's the world of coding that has truly captured my imagination. I've embraced the challenges and joys of learning languages like HTML, CSS, and JavaScript, and the thrill of bringing ideas to life through code is incredibly rewarding.
+                                Outside of coding, you'll find me exploring the scenic landscapes of Michigan, enjoying the diverse culture, and, of course, cheering on the Spartans! I believe in the power of continuous learning and am excited about the endless possibilities that the tech world offers.
+                                Join me on this journey of growth and innovation as I shape a new career and embrace a life filled with creativity and endless possibilities.</p>
+                        </div>
+                        <img />
+                    </div>
+                </section>
+                <!--Project Section-->
+                <section id="projects">
+                    <h2 id="project-header">My Projects</h2>
+                    <div class="grid-container">
+                        <a href="#">
+                            <div class="project project1">
+                                <div class="project-description">
+                                    <h3 class="project-title">Credit Card Checker</h3>
+                                    <p>Created a program that takes in numbers and validates that they are an actual credit card number.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="project project2">
+                                <div class="project-description">
+                                    <h3 class="project-title">Form a Story</h3>
+                                    <p>Created a program that creates a story with the given random keywords.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="project project3">
+                                <div class="project-description">
+                                    <h3 class="project-title">Number Guesser</h3>
+                                    <p>Created a program that the user inputs a number and the computer inputs a number and whoever is closer to the answer is the winner.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="project project4">
+                                <div class="project-description">
+                                    <h3 class="project-title">Fashion Blog</h3>
+                                    <p>Created a rough fashion blog to showcase HTML and CSS skills.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="project project5">
+                                <div class="project-description">
+                                    <h3 class="project-title">Company Homepage with FlexBox</h3>
+                                    <p>Created a home landing-page for imaginary company.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="project project6">
+                                <div class="project-description">
+                                    <h3 class="project-title">Broadway</h3>
+                                    <p>Created a home landing-page for Broadway Design Firm</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!--Skills Section-->
+                <section id="skills">
+                    <h2 id="skills-header">Skills</h2>
+                    <div id="skills-container">
+                        <div class="icon"><id class="fab fa-html5"></id></div>
+                        <div class="icon"><id class="fab fa-css3-alt"></id></div>
+                        <div class="icon"><id class="fab fa-js"></id></div>
+                        <div class="icon"><id class="fab fa-git"></id></div>
+                        <div class="icon"><id class="fab fa-chrome"></id></div>
+                        <div class="icon"><id class="fab fa-terminal"></id></div>
+                        <div class="icon"><id class="fab fa-node"></id></div>
+                        <div class="icon"><id class="fab fa-github"></id></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!--Footer section-->
+        <div id="footer">
+            <footer>
+               2023 Created in the Mitten, Smittin with the Written.
+            </footer>
+        </div>
+        <script src="script.js" defer></script>
     </body>
 </html>
